@@ -1,0 +1,1 @@
+{"name":"Local: 2606_S3_바이러스","url":"c:\\Users\\jaehoon\\AlgorithmStudy2\\jaehoon\\week1\\2606_S3_바이러스.py","tests":[{"id":1673426511396,"input":"7\n6\n1 2\n2 3\n1 5\n5 2\n5 6\n4 7","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jaehoon\\AlgorithmStudy2\\jaehoon\\week1\\2606_S3_바이러스.py","group":"local","local":true}
