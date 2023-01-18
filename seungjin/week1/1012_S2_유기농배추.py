@@ -1,38 +1,30 @@
 from collections import deque
 
-dx = [-1,1,0,0]
-dy = [0,0,-1,1]
+def dfs(x,y):
+    if x<0 or x>=n or y<0 or y>=m:
+        return False
+    if graph[x][y]==1:
+        graph[x][y]=0
+        dfs(x-1,y)
+        dfs(x+1,y)
+        dfs(x,y-1)
+        dfs(x,y+1)
+        return True
+    return False
 
-def check(y,x):
-    queue = deque([[y,x]])
-    visit[y][x] = True
-
-    while queue:
-        y,x = queue.popleft()
-
-        for i in range(4):
-            ky,kx = y+dy[i] , x+dx[i]
-            if ky<0 or kx<0 or ky>=N or kx>=M or visit[ky][kx] == True or board[ky][kx] == 0:
-                continue
-
-            board[ky][kx] = 1
-            visit[ky][kx] = True
-            queue.append([ky,kx])
-
-
-T = int(input())
+T=int(input())
+answer=[]
 for i in range(T):
-    M,N,K = map(int,input().split())
-    board = [[0 for col in range(M)] for row in range(N)]
-    visit = [[False for col in range(M)] for row in range(N)]
-    cnt = 0
-    for j in range(K):
-        x,y = map(int,input().split())
-        board[y][x] = 1
-
-    for y in range(N):
-        for x in range(M):
-            if board[y][x] == 1 and visit[y][x] == False:
-                check(y,x)
-                cnt+=1
-    print(cnt)
+    result=0
+    m,n,k=map(int,input().split())
+    graph=[[0]*m for l in range(n)]
+    for j in range(k):
+        b,a=map(int,input().split())
+        graph[a][b]=1
+    for j in range(n):
+        for k in range(m):
+            if dfs(j,k)==True:
+                result+=1
+    answer.append(result)
+for i in answer:
+    print(i)
