@@ -1,0 +1,4 @@
+graph=[[21,2],[2,3]]
+print(graph)
+sorted_graph=[sorted(i) for i in graph]
+print(sorted_graph)
