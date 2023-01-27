@@ -1,4 +1,6 @@
 from collections import deque
+import sys
+sys.setrecursionlimit(10**6)
 
 def dfs(x,y):
     if x<0 or x>=n or y<0 or y>=m:
