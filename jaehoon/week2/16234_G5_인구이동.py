@@ -17,6 +17,7 @@ def move(board,i,j,visit,l,r):
 
             queue.append([ky,kx])
             visit[ky][kx] = True
+            
             positions.append([ky,kx])
     
     return positions,visit
@@ -34,6 +35,7 @@ if __name__ == "__main__":
                 if visit[i][j] == False:
                     positions,visit = move(board,i,j,visit,l,r)
                     leng = len(positions)
+
                     if leng > 1:
                         flag=1
                         avg = sum([board[y][x] for y, x in positions]) // leng
