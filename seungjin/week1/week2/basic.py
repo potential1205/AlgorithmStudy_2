@@ -1,3 +1,4 @@
+
 def binary_search(array,target,start,end):
     if start>end:
         return None
@@ -19,6 +20,8 @@ if __name__ == "__main__":
         print(-1)
     else:
         print(result+1)
+
+
 
 
 

@@ -41,4 +41,3 @@ for i in range(m):
             B_total+=collegue
         print(W_total,B_total)
 print(W_total,B_total)
-        
