@@ -1,0 +1,1 @@
+{"name":"Local: 9095_S3_1,2,3더하기","url":"c:\\Users\\jaehoon\\AlgorithmStudy2\\jaehoon\\week3\\9095_S3_1,2,3더하기.py","tests":[{"id":1675066694555,"input":"3\n4\n7\n10","output":"7\n44\n274"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\jaehoon\\AlgorithmStudy2\\jaehoon\\week3\\9095_S3_1,2,3더하기.py","group":"local","local":true}
