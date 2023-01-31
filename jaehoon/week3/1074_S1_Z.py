@@ -34,6 +34,7 @@ if __name__ == "__main__":
     solve(0,0,size)
 
     result, val = 0 , size*size
+    print(info)
     for i in range(n):
         val //= 4
         result += ((info[i]-1)*val)

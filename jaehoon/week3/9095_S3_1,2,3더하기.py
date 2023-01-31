@@ -1,5 +1,3 @@
-from itertools import combinations
-
 def solve(path):
     global cnt
     if sum(path) == n:
